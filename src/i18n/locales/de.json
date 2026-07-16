@@ -1,0 +1,59 @@
+{
+  "common": {
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "loading": "Wird geladen...",
+    "close": "Schließen",
+    "search": "Suchen",
+    "clear": "Zurücksetzen",
+    "help": "Hilfe",
+    "logout": "Abmelden",
+    "darkMode": "Dunkler Modus",
+    "lightMode": "Heller Modus",
+    "language": "Sprache"
+  },
+  "nav": {
+    "dashboard": "Startseite",
+    "transactions": "Transaktionen",
+    "budgets": "Budgets",
+    "accounts": "Konten",
+    "profile": "Profil"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "greeting": "Hallo, {{name}}",
+    "subtitle": "Behalte deine Finanzen im Überblick",
+    "emptyTitle": "Du hast noch keine Konten",
+    "emptyDescription": "Lege dein erstes Konto an, um Transaktionen zu erfassen.",
+    "emptyCta": "Mein erstes Konto anlegen"
+  },
+  "transactions": {
+    "title": "Transaktionen",
+    "empty": "Noch keine Transaktionen",
+    "income": "Einnahme",
+    "expense": "Ausgabe",
+    "transfer": "Überweisung"
+  },
+  "accounts": {
+    "title": "Konten",
+    "empty": "Keine Konten registriert",
+    "balance": "Saldo",
+    "addAccount": "Konto hinzufügen"
+  },
+  "profile": {
+    "title": "Profil",
+    "settings": "Einstellungen",
+    "theme": "Design",
+    "language": "Sprache",
+    "logout": "Abmelden",
+    "logoutConfirm": "Bist du sicher, dass du dich abmelden möchtest?"
+  },
+  "auth": {
+    "login": "Anmelden",
+    "loginWith": "Weiter mit {{provider}}",
+    "welcome": "Willkommen bei Platica",
+    "tagline": "Dein persönlicher Finanz-Tracker"
+  }
+}

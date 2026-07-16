@@ -1,0 +1,59 @@
+{
+  "common": {
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "loading": "Cargando...",
+    "close": "Cerrar",
+    "search": "Buscar",
+    "clear": "Limpiar",
+    "help": "Ayuda",
+    "logout": "Cerrar sesión",
+    "darkMode": "Modo oscuro",
+    "lightMode": "Modo claro",
+    "language": "Idioma"
+  },
+  "nav": {
+    "dashboard": "Inicio",
+    "transactions": "Movimientos",
+    "budgets": "Presupuestos",
+    "accounts": "Cuentas",
+    "profile": "Perfil"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "greeting": "Hola, {{name}}",
+    "subtitle": "Sigue tus finanzas con claridad",
+    "emptyTitle": "Todavía no tienes cuentas",
+    "emptyDescription": "Crea tu primera cuenta para empezar a registrar transacciones.",
+    "emptyCta": "Crear mi primera cuenta"
+  },
+  "transactions": {
+    "title": "Transacciones",
+    "empty": "Sin transacciones aún",
+    "income": "Ingreso",
+    "expense": "Gasto",
+    "transfer": "Transferencia"
+  },
+  "accounts": {
+    "title": "Cuentas",
+    "empty": "Sin cuentas registradas",
+    "balance": "Balance",
+    "addAccount": "Agregar cuenta"
+  },
+  "profile": {
+    "title": "Perfil",
+    "settings": "Configuración",
+    "theme": "Tema",
+    "language": "Idioma",
+    "logout": "Cerrar sesión",
+    "logoutConfirm": "¿Estás seguro que deseas cerrar sesión?"
+  },
+  "auth": {
+    "login": "Iniciar sesión",
+    "loginWith": "Continuar con {{provider}}",
+    "welcome": "Bienvenido a Platica",
+    "tagline": "Tu wallet personal de finanzas"
+  }
+}

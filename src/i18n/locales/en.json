@@ -1,0 +1,59 @@
+{
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "loading": "Loading...",
+    "close": "Close",
+    "search": "Search",
+    "clear": "Clear",
+    "help": "Help",
+    "logout": "Log out",
+    "darkMode": "Dark mode",
+    "lightMode": "Light mode",
+    "language": "Language"
+  },
+  "nav": {
+    "dashboard": "Home",
+    "transactions": "Transactions",
+    "budgets": "Budgets",
+    "accounts": "Accounts",
+    "profile": "Profile"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "greeting": "Hi, {{name}}",
+    "subtitle": "Track your finances with clarity",
+    "emptyTitle": "You don't have any accounts yet",
+    "emptyDescription": "Create your first account to start logging transactions.",
+    "emptyCta": "Create my first account"
+  },
+  "transactions": {
+    "title": "Transactions",
+    "empty": "No transactions yet",
+    "income": "Income",
+    "expense": "Expense",
+    "transfer": "Transfer"
+  },
+  "accounts": {
+    "title": "Accounts",
+    "empty": "No accounts registered",
+    "balance": "Balance",
+    "addAccount": "Add account"
+  },
+  "profile": {
+    "title": "Profile",
+    "settings": "Settings",
+    "theme": "Theme",
+    "language": "Language",
+    "logout": "Log out",
+    "logoutConfirm": "Are you sure you want to log out?"
+  },
+  "auth": {
+    "login": "Log in",
+    "loginWith": "Continue with {{provider}}",
+    "welcome": "Welcome to Platica",
+    "tagline": "Your personal finance wallet"
+  }
+}
