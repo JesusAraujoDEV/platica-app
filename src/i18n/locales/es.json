@@ -1,59 +1,30 @@
 {
   "common": {
-    "save": "Guardar",
-    "cancel": "Cancelar",
-    "delete": "Eliminar",
-    "edit": "Editar",
-    "loading": "Cargando...",
-    "close": "Cerrar",
-    "search": "Buscar",
-    "clear": "Limpiar",
-    "help": "Ayuda",
-    "logout": "Cerrar sesión",
-    "darkMode": "Modo oscuro",
-    "lightMode": "Modo claro",
-    "language": "Idioma"
+    "save": "Guardar", "cancel": "Cancelar", "delete": "Eliminar", "edit": "Editar",
+    "loading": "Cargando...", "close": "Cerrar", "search": "Buscar", "clear": "Limpiar",
+    "help": "Ayuda", "logout": "Cerrar sesión", "darkMode": "Modo oscuro",
+    "lightMode": "Modo claro", "language": "Idioma", "retry": "Reintentar",
+    "noData": "No hay datos para mostrar", "notFound": "Sección no encontrada"
   },
-  "nav": {
-    "dashboard": "Inicio",
-    "transactions": "Movimientos",
-    "budgets": "Presupuestos",
-    "accounts": "Cuentas",
-    "profile": "Perfil"
-  },
+  "nav": { "dashboard": "Inicio", "transactions": "Movimientos", "budgets": "Presupuestos", "accounts": "Cuentas", "profile": "Perfil", "more": "Más" },
   "dashboard": {
-    "title": "Dashboard",
-    "greeting": "Hola, {{name}}",
-    "subtitle": "Sigue tus finanzas con claridad",
-    "emptyTitle": "Todavía no tienes cuentas",
-    "emptyDescription": "Crea tu primera cuenta para empezar a registrar transacciones.",
-    "emptyCta": "Crear mi primera cuenta"
+    "title": "Resumen", "greeting": "Hola, {{name}}", "subtitle": "Tus finanzas conectadas con Platica",
+    "accountsTotal": "Total en cuentas", "incomeTotal": "Ingresos", "expenseTotal": "Gastos",
+    "netTotal": "Balance neto", "recent": "Movimientos recientes"
   },
-  "transactions": {
-    "title": "Transacciones",
-    "empty": "Sin transacciones aún",
-    "income": "Ingreso",
-    "expense": "Gasto",
-    "transfer": "Transferencia"
-  },
-  "accounts": {
-    "title": "Cuentas",
-    "empty": "Sin cuentas registradas",
-    "balance": "Balance",
-    "addAccount": "Agregar cuenta"
-  },
-  "profile": {
-    "title": "Perfil",
-    "settings": "Configuración",
-    "theme": "Tema",
-    "language": "Idioma",
-    "logout": "Cerrar sesión",
-    "logoutConfirm": "¿Estás seguro que deseas cerrar sesión?"
-  },
+  "transactions": { "title": "Transacciones", "empty": "Sin transacciones aún", "untitled": "Sin descripción", "income": "Ingreso", "expense": "Gasto", "transfer": "Transferencia" },
+  "accounts": { "title": "Cuentas", "empty": "Sin cuentas registradas", "balance": "Balance", "addAccount": "Agregar cuenta" },
+  "profile": { "title": "Perfil", "settings": "Configuración", "theme": "Tema", "language": "Idioma", "logout": "Cerrar sesión", "logoutConfirm": "¿Estás seguro de que deseas cerrar sesión?" },
   "auth": {
-    "login": "Iniciar sesión",
-    "loginWith": "Continuar con {{provider}}",
-    "welcome": "Bienvenido a Platica",
-    "tagline": "Tu wallet personal de finanzas"
+    "login": "Iniciar sesión", "welcome": "Bienvenido a Platica", "tagline": "Tu wallet personal de finanzas",
+    "identifier": "Usuario o correo", "identifierPlaceholder": "usuario@correo.com", "password": "Contraseña",
+    "passwordPlaceholder": "Tu contraseña", "required": "Completa usuario y contraseña.",
+    "invalidCredentials": "Credenciales inválidas.", "loginError": "No se pudo iniciar sesión.",
+    "googlePending": "El acceso de Google se habilitará cuando estén configurados los identificadores nativos; ya no permite entrar sin autenticar."
+  },
+  "features": {
+    "subscriptions": "Suscripciones", "categories": "Categorías", "categoryGroups": "Grupos de categorías",
+    "budgets": "Presupuestos", "debts": "Deudas", "rates": "Tasas de cambio",
+    "statistics": "Estadísticas", "calendar": "Calendario"
   }
 }

@@ -13,10 +13,8 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png",
-        "backgroundColor": "#059669"
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#081219"
       },
       "package": "com.platica.app"
     },

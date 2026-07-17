@@ -18,6 +18,7 @@ android/
 Thumbs.db
 
 # Build
+artifacts/
 *.jks
 *.p8
 *.p12

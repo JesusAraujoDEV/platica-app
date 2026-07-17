@@ -8,13 +8,8 @@ type IoniconsName = React.ComponentProps<typeof Ionicons>["name"];
 export default function TabsLayout() {
   const { t } = useTranslation();
   const { theme } = useTheme();
-
   const tabIcon = (name: IoniconsName, focused: boolean) => (
-    <Ionicons
-      name={name}
-      size={24}
-      color={focused ? theme.colors.tabBarActive : theme.colors.tabBarInactive}
-    />
+    <Ionicons name={name} size={24} color={focused ? theme.colors.tabBarActive : theme.colors.tabBarInactive} />
   );
 
   return (
@@ -23,40 +18,14 @@ export default function TabsLayout() {
         headerShown: false,
         tabBarActiveTintColor: theme.colors.tabBarActive,
         tabBarInactiveTintColor: theme.colors.tabBarInactive,
-        tabBarStyle: {
-          backgroundColor: theme.colors.tabBar,
-          borderTopColor: theme.colors.tabBarBorder,
-        },
+        tabBarStyle: { backgroundColor: theme.colors.tabBar, borderTopColor: theme.colors.tabBarBorder },
       }}
     >
-      <Tabs.Screen
-        name="index"
-        options={{
-          title: t("nav.dashboard"),
-          tabBarIcon: ({ focused }) => tabIcon("home-outline", focused),
-        }}
-      />
-      <Tabs.Screen
-        name="transactions"
-        options={{
-          title: t("nav.transactions"),
-          tabBarIcon: ({ focused }) => tabIcon("swap-horizontal-outline", focused),
-        }}
-      />
-      <Tabs.Screen
-        name="accounts"
-        options={{
-          title: t("nav.accounts"),
-          tabBarIcon: ({ focused }) => tabIcon("wallet-outline", focused),
-        }}
-      />
-      <Tabs.Screen
-        name="profile"
-        options={{
-          title: t("nav.profile"),
-          tabBarIcon: ({ focused }) => tabIcon("person-outline", focused),
-        }}
-      />
+      <Tabs.Screen name="index" options={{ title: t("nav.dashboard"), tabBarIcon: ({ focused }) => tabIcon("home-outline", focused) }} />
+      <Tabs.Screen name="transactions" options={{ title: t("nav.transactions"), tabBarIcon: ({ focused }) => tabIcon("swap-horizontal-outline", focused) }} />
+      <Tabs.Screen name="accounts" options={{ title: t("nav.accounts"), tabBarIcon: ({ focused }) => tabIcon("wallet-outline", focused) }} />
+      <Tabs.Screen name="profile" options={{ title: t("nav.profile"), tabBarIcon: ({ focused }) => tabIcon("person-outline", focused) }} />
+      <Tabs.Screen name="more" options={{ title: t("nav.more"), tabBarIcon: ({ focused }) => tabIcon("grid-outline", focused) }} />
     </Tabs>
   );
 }

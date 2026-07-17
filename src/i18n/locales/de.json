@@ -1,59 +1,28 @@
 {
   "common": {
-    "save": "Speichern",
-    "cancel": "Abbrechen",
-    "delete": "Löschen",
-    "edit": "Bearbeiten",
-    "loading": "Wird geladen...",
-    "close": "Schließen",
-    "search": "Suchen",
-    "clear": "Zurücksetzen",
-    "help": "Hilfe",
-    "logout": "Abmelden",
-    "darkMode": "Dunkler Modus",
-    "lightMode": "Heller Modus",
-    "language": "Sprache"
+    "save": "Speichern", "cancel": "Abbrechen", "delete": "Löschen", "edit": "Bearbeiten", "loading": "Wird geladen...",
+    "close": "Schließen", "search": "Suchen", "clear": "Zurücksetzen", "help": "Hilfe", "logout": "Abmelden",
+    "darkMode": "Dunkler Modus", "lightMode": "Heller Modus", "language": "Sprache", "retry": "Erneut versuchen",
+    "noData": "Keine Daten verfügbar", "notFound": "Bereich nicht gefunden"
   },
-  "nav": {
-    "dashboard": "Startseite",
-    "transactions": "Transaktionen",
-    "budgets": "Budgets",
-    "accounts": "Konten",
-    "profile": "Profil"
-  },
+  "nav": { "dashboard": "Start", "transactions": "Transaktionen", "budgets": "Budgets", "accounts": "Konten", "profile": "Profil", "more": "Mehr" },
   "dashboard": {
-    "title": "Dashboard",
-    "greeting": "Hallo, {{name}}",
-    "subtitle": "Behalte deine Finanzen im Überblick",
-    "emptyTitle": "Du hast noch keine Konten",
-    "emptyDescription": "Lege dein erstes Konto an, um Transaktionen zu erfassen.",
-    "emptyCta": "Mein erstes Konto anlegen"
+    "title": "Übersicht", "greeting": "Hallo, {{name}}", "subtitle": "Deine Finanzen mit Platica verbunden",
+    "accountsTotal": "Kontostand gesamt", "incomeTotal": "Einnahmen", "expenseTotal": "Ausgaben",
+    "netTotal": "Nettosaldo", "recent": "Letzte Transaktionen"
   },
-  "transactions": {
-    "title": "Transaktionen",
-    "empty": "Noch keine Transaktionen",
-    "income": "Einnahme",
-    "expense": "Ausgabe",
-    "transfer": "Überweisung"
-  },
-  "accounts": {
-    "title": "Konten",
-    "empty": "Keine Konten registriert",
-    "balance": "Saldo",
-    "addAccount": "Konto hinzufügen"
-  },
-  "profile": {
-    "title": "Profil",
-    "settings": "Einstellungen",
-    "theme": "Design",
-    "language": "Sprache",
-    "logout": "Abmelden",
-    "logoutConfirm": "Bist du sicher, dass du dich abmelden möchtest?"
-  },
+  "transactions": { "title": "Transaktionen", "empty": "Noch keine Transaktionen", "untitled": "Ohne Beschreibung", "income": "Einnahme", "expense": "Ausgabe", "transfer": "Überweisung" },
+  "accounts": { "title": "Konten", "empty": "Keine Konten registriert", "balance": "Saldo", "addAccount": "Konto hinzufügen" },
+  "profile": { "title": "Profil", "settings": "Einstellungen", "theme": "Design", "language": "Sprache", "logout": "Abmelden", "logoutConfirm": "Möchtest du dich wirklich abmelden?" },
   "auth": {
-    "login": "Anmelden",
-    "loginWith": "Weiter mit {{provider}}",
-    "welcome": "Willkommen bei Platica",
-    "tagline": "Dein persönlicher Finanz-Tracker"
+    "login": "Anmelden", "welcome": "Willkommen bei Platica", "tagline": "Dein persönlicher Finanz-Tracker",
+    "identifier": "Benutzername oder E-Mail", "identifierPlaceholder": "benutzer@beispiel.de", "password": "Passwort",
+    "passwordPlaceholder": "Dein Passwort", "required": "Benutzername und Passwort eingeben.",
+    "invalidCredentials": "Ungültige Anmeldedaten.", "loginError": "Anmeldung fehlgeschlagen.",
+    "googlePending": "Google-Anmeldung wird nach Konfiguration der nativen Client-IDs aktiviert; Authentifizierung wird nicht mehr umgangen."
+  },
+  "features": {
+    "subscriptions": "Abonnements", "categories": "Kategorien", "categoryGroups": "Kategoriegruppen",
+    "budgets": "Budgets", "debts": "Schulden", "rates": "Wechselkurse", "statistics": "Statistiken", "calendar": "Kalender"
   }
 }

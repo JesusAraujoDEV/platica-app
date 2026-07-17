@@ -1,59 +1,28 @@
 {
   "common": {
-    "save": "Save",
-    "cancel": "Cancel",
-    "delete": "Delete",
-    "edit": "Edit",
-    "loading": "Loading...",
-    "close": "Close",
-    "search": "Search",
-    "clear": "Clear",
-    "help": "Help",
-    "logout": "Log out",
-    "darkMode": "Dark mode",
-    "lightMode": "Light mode",
-    "language": "Language"
+    "save": "Save", "cancel": "Cancel", "delete": "Delete", "edit": "Edit", "loading": "Loading...",
+    "close": "Close", "search": "Search", "clear": "Clear", "help": "Help", "logout": "Log out",
+    "darkMode": "Dark mode", "lightMode": "Light mode", "language": "Language", "retry": "Retry",
+    "noData": "No data to display", "notFound": "Section not found"
   },
-  "nav": {
-    "dashboard": "Home",
-    "transactions": "Transactions",
-    "budgets": "Budgets",
-    "accounts": "Accounts",
-    "profile": "Profile"
-  },
+  "nav": { "dashboard": "Home", "transactions": "Transactions", "budgets": "Budgets", "accounts": "Accounts", "profile": "Profile", "more": "More" },
   "dashboard": {
-    "title": "Dashboard",
-    "greeting": "Hi, {{name}}",
-    "subtitle": "Track your finances with clarity",
-    "emptyTitle": "You don't have any accounts yet",
-    "emptyDescription": "Create your first account to start logging transactions.",
-    "emptyCta": "Create my first account"
+    "title": "Overview", "greeting": "Hi, {{name}}", "subtitle": "Your finances connected to Platica",
+    "accountsTotal": "Accounts total", "incomeTotal": "Income", "expenseTotal": "Expenses",
+    "netTotal": "Net balance", "recent": "Recent transactions"
   },
-  "transactions": {
-    "title": "Transactions",
-    "empty": "No transactions yet",
-    "income": "Income",
-    "expense": "Expense",
-    "transfer": "Transfer"
-  },
-  "accounts": {
-    "title": "Accounts",
-    "empty": "No accounts registered",
-    "balance": "Balance",
-    "addAccount": "Add account"
-  },
-  "profile": {
-    "title": "Profile",
-    "settings": "Settings",
-    "theme": "Theme",
-    "language": "Language",
-    "logout": "Log out",
-    "logoutConfirm": "Are you sure you want to log out?"
-  },
+  "transactions": { "title": "Transactions", "empty": "No transactions yet", "untitled": "No description", "income": "Income", "expense": "Expense", "transfer": "Transfer" },
+  "accounts": { "title": "Accounts", "empty": "No accounts registered", "balance": "Balance", "addAccount": "Add account" },
+  "profile": { "title": "Profile", "settings": "Settings", "theme": "Theme", "language": "Language", "logout": "Log out", "logoutConfirm": "Are you sure you want to log out?" },
   "auth": {
-    "login": "Log in",
-    "loginWith": "Continue with {{provider}}",
-    "welcome": "Welcome to Platica",
-    "tagline": "Your personal finance wallet"
+    "login": "Log in", "welcome": "Welcome to Platica", "tagline": "Your personal finance wallet",
+    "identifier": "Username or email", "identifierPlaceholder": "user@example.com", "password": "Password",
+    "passwordPlaceholder": "Your password", "required": "Enter your username and password.",
+    "invalidCredentials": "Invalid credentials.", "loginError": "Unable to log in.",
+    "googlePending": "Google sign-in will be enabled after native client IDs are configured; it no longer bypasses authentication."
+  },
+  "features": {
+    "subscriptions": "Subscriptions", "categories": "Categories", "categoryGroups": "Category groups",
+    "budgets": "Budgets", "debts": "Debts", "rates": "Exchange rates", "statistics": "Statistics", "calendar": "Calendar"
   }
 }
