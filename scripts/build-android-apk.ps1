@@ -56,7 +56,10 @@ try {
 finally {
   while ((Get-Location).Path.StartsWith($WorktreePath, [System.StringComparison]::OrdinalIgnoreCase)) { Pop-Location }
   if ($buildSucceeded) {
-    git worktree remove --force $WorktreePath 2>$null
+    git -c core.longpaths=true worktree remove --force $WorktreePath
+    if ($LASTEXITCODE -ne 0) {
+      Write-Warning "El APK se generó, pero no se pudo eliminar el worktree: $WorktreePath"
+    }
   } elseif (Test-Path $WorktreePath) {
     Write-Warning "El build falló. Se conserva el worktree para diagnóstico: $WorktreePath"
   }
