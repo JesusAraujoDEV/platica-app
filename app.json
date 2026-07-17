@@ -9,23 +9,13 @@
     "scheme": "platica",
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.platica.app",
-      "splash": {
-        "image": "./assets/splash-icon.png",
-        "resizeMode": "contain",
-        "backgroundColor": "#059669"
-      }
+      "bundleIdentifier": "com.platica.app"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png",
-        "backgroundColor": "#059669"
-      },
-      "splash": {
-        "image": "./assets/splash-icon.png",
-        "resizeMode": "contain",
         "backgroundColor": "#059669"
       },
       "package": "com.platica.app"
@@ -37,7 +27,15 @@
     "plugins": [
       "expo-router",
       "expo-localization",
-      "expo-secure-store"
+      "expo-secure-store",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#059669"
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true
