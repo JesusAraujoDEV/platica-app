@@ -1,8 +1,11 @@
+import { useState } from "react";
 import { Alert, ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { useTranslation } from "react-i18next";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import { useAuth } from "@/auth/AuthContext";
+import { ChangePasswordSheet } from "@/components/profile/ChangePasswordSheet";
+import { EditNameSheet } from "@/components/profile/EditNameSheet";
 import { useTheme } from "@/theme/ThemeContext";
 import { SUPPORTED_LANGUAGES } from "@/i18n";
 import i18n from "@/i18n";
@@ -10,8 +13,9 @@ import i18n from "@/i18n";
 export function ProfileScreen() {
   const { t } = useTranslation();
   const { theme, mode, toggleTheme } = useTheme();
-  const { user, logout } = useAuth();
+  const { user, logout, retry } = useAuth();
   const insets = useSafeAreaInsets();
+  const [sheet, setSheet] = useState<"password" | "name" | null>(null);
   const currentLang = SUPPORTED_LANGUAGES.find((language) => language.code === i18n.language);
 
   const handleLanguageChange = () => {
@@ -60,10 +64,33 @@ export function ProfileScreen() {
         </TouchableOpacity>
       </View>
 
+      <View style={[styles.section, { backgroundColor: theme.colors.surface, borderColor: theme.colors.surfaceBorder }]}>
+        <Text style={[styles.sectionTitle, { color: theme.colors.textMuted }]}>{t("profile.account")}</Text>
+        <TouchableOpacity style={styles.row} onPress={() => setSheet("name")}>
+          <Ionicons name="person-outline" size={20} color={theme.colors.icon} />
+          <Text style={[styles.rowLabel, { color: theme.colors.text }]}>{t("profile.editName")}</Text>
+          <Ionicons name="chevron-forward" size={18} color={theme.colors.textMuted} />
+        </TouchableOpacity>
+        <View style={[styles.divider, { backgroundColor: theme.colors.surfaceBorder }]} />
+        <TouchableOpacity style={styles.row} onPress={() => setSheet("password")}>
+          <Ionicons name="lock-closed-outline" size={20} color={theme.colors.icon} />
+          <Text style={[styles.rowLabel, { color: theme.colors.text }]}>{t("profile.changePassword")}</Text>
+          <Ionicons name="chevron-forward" size={18} color={theme.colors.textMuted} />
+        </TouchableOpacity>
+      </View>
+
       <TouchableOpacity style={[styles.logoutButton, { borderColor: theme.colors.destructive }]} onPress={handleLogout}>
         <Ionicons name="log-out-outline" size={20} color={theme.colors.destructive} />
         <Text style={[styles.logoutText, { color: theme.colors.destructive }]}>{t("profile.logout")}</Text>
       </TouchableOpacity>
+
+      <ChangePasswordSheet visible={sheet === "password"} onClose={() => setSheet(null)} />
+      <EditNameSheet
+        visible={sheet === "name"}
+        onClose={() => setSheet(null)}
+        initialName={user?.name || user?.username || ""}
+        onSaved={() => void retry()}
+      />
     </ScrollView>
   );
 }

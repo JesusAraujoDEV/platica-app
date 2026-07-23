@@ -4,7 +4,7 @@
     "close": "Schließen", "search": "Suchen", "clear": "Zurücksetzen", "help": "Hilfe", "logout": "Abmelden",
     "darkMode": "Dunkler Modus", "lightMode": "Heller Modus", "language": "Sprache", "retry": "Erneut versuchen",
     "noData": "Keine Daten verfügbar", "notFound": "Bereich nicht gefunden",
-    "add": "Hinzufügen", "confirm": "Bestätigen"
+    "add": "Hinzufügen", "confirm": "Bestätigen", "error": "Ein Fehler ist aufgetreten", "date": "Datum"
   },
   "form": {
     "required": "Dieses Feld ist erforderlich", "invalidNumber": "Gib eine gültige Zahl ein",
@@ -18,11 +18,81 @@
   "dashboard": {
     "title": "Übersicht", "greeting": "Hallo, {{name}}", "subtitle": "Deine Finanzen mit Platica verbunden",
     "accountsTotal": "Kontostand gesamt", "incomeTotal": "Einnahmen", "expenseTotal": "Ausgaben",
-    "netTotal": "Nettosaldo", "recent": "Letzte Transaktionen"
+    "netTotal": "Nettosaldo", "recent": "Letzte Transaktionen",
+    "budgetVsActual": "Budget vs. Ausgaben", "remaining": "Verbleibend"
   },
-  "transactions": { "title": "Transaktionen", "empty": "Noch keine Transaktionen", "untitled": "Ohne Beschreibung", "income": "Einnahme", "expense": "Ausgabe", "transfer": "Überweisung" },
+  "transactions": {
+    "title": "Transaktionen", "empty": "Noch keine Transaktionen", "untitled": "Ohne Beschreibung",
+    "income": "Einnahme", "expense": "Ausgabe", "transfer": "Überweisung", "confirm": "Bestätigen",
+    "addTitle": "Neue Transaktion", "editTitle": "Transaktion bearbeiten",
+    "account": "Konto", "selectAccount": "Konto auswählen",
+    "category": "Kategorie", "selectCategory": "Kategorie auswählen",
+    "amount": "Betrag", "date": "Datum", "description": "Beschreibung", "descriptionHint": "Optional",
+    "errAccount": "Konto auswählen", "errCategory": "Kategorie auswählen",
+    "errAmount": "Gib einen gültigen Betrag ein", "errDate": "Gib ein gültiges Datum ein (JJJJ-MM-TT)",
+    "deleteTitle": "Transaktion löschen", "deleteMessage": "Diese Transaktion löschen?",
+    "transferTitle": "Neue Überweisung", "transferAction": "Überweisen",
+    "from": "Von", "to": "Nach", "destinationAmount": "Zielbetrag", "concept": "Verwendungszweck",
+    "errAccounts": "Beide Konten auswählen", "errSameAccount": "Konten müssen unterschiedlich sein",
+    "errDestinationAmount": "Gib den Zielbetrag ein"
+  },
   "accounts": { "title": "Konten", "empty": "Keine Konten registriert", "balance": "Saldo", "addAccount": "Konto hinzufügen" },
-  "profile": { "title": "Profil", "settings": "Einstellungen", "theme": "Design", "language": "Sprache", "logout": "Abmelden", "logoutConfirm": "Möchtest du dich wirklich abmelden?" },
+  "rates": { "title": "Wechselkurse", "current": "Aktueller Kurs", "history": "Verlauf" },
+  "budgets": {
+    "title": "Budgets", "empty": "Noch keine Budgets", "untitled": "Keine Kategorie",
+    "remaining": "Verbleibend", "period": "Zeitraum", "rateSource": "Kurs",
+    "periodMonthly": "Monatlich", "periodYearly": "Jährlich", "periodOneTime": "Einmalig",
+    "rateBcv": "BCV", "rateBinance": "Binance", "rateUsd": "USD", "rateEur": "EUR",
+    "editTitle": "Budget bearbeiten", "newTitle": "Neues Budget",
+    "deleteTitle": "Budget löschen", "deleteMessage": "Dieses Budget löschen?"
+  },
+  "debts": {
+    "title": "Schulden", "empty": "Keine Schulden registriert", "payable": "Zu zahlen", "receivable": "Zu erhalten",
+    "pay": "Zahlen", "contactName": "Kontakt", "totalAmount": "Gesamtbetrag", "dueDate": "Fällig",
+    "editTitle": "Schuld bearbeiten", "newTitle": "Neue Schuld",
+    "deleteTitle": "Schuld löschen", "deleteMessage": "Diese Schuld löschen?",
+    "status": { "pending": "Offen", "partial": "Teilweise", "paid": "Bezahlt" }
+  },
+  "categories": {
+    "title": "Kategorien", "empty": "Noch keine Kategorien", "newTitle": "Neue Kategorie", "editTitle": "Kategorie bearbeiten",
+    "name": "Name", "namePlaceholder": "z. B. Essen", "nameRequired": "Gib einen Namen ein",
+    "income": "Einnahme", "expense": "Ausgabe", "icon": "Symbol", "iconPlaceholder": "z. B. cart", "color": "Farbe",
+    "deleteTitle": "Kategorie löschen", "deleteConfirm": "Diese Kategorie löschen?"
+  },
+  "categoryGroups": {
+    "title": "Kategoriegruppen", "empty": "Noch keine Gruppen", "newTitle": "Neue Gruppe", "editTitle": "Gruppe bearbeiten",
+    "name": "Name", "namePlaceholder": "z. B. Arbeit", "nameRequired": "Gib einen Namen ein",
+    "type": "Typ", "typeIncome": "Einnahme", "typeExpense": "Ausgabe", "typeNeutral": "Neutral",
+    "include": "Einschließen", "exclude": "Ausschließen",
+    "deleteTitle": "Gruppe löschen", "deleteConfirm": "Diese Gruppe löschen?"
+  },
+  "recurring": {
+    "title": "Abonnements", "empty": "Noch keine Abonnements", "newTitle": "Neues Abonnement", "editTitle": "Abonnement bearbeiten",
+    "untitled": "Ohne Beschreibung", "description": "Beschreibung", "descriptionPlaceholder": "z. B. Spotify", "descriptionRequired": "Gib eine Beschreibung ein",
+    "amount": "Betrag", "amountInvalid": "Gib einen gültigen Betrag ein", "currency": "Währung", "account": "Konto", "noAccount": "Kein Konto",
+    "category": "Kategorie", "categoryRequired": "Kategorie auswählen",
+    "frequency": "Häufigkeit", "frequency_daily": "Täglich", "frequency_weekly": "Wöchentlich", "frequency_monthly": "Monatlich", "frequency_yearly": "Jährlich",
+    "nextDate": "Nächstes Datum", "dateInvalid": "Gib ein gültiges Datum ein (JJJJ-MM-TT)",
+    "executionMode": "Modus", "modeAuto": "Automatisch", "modeManual": "Manuell",
+    "active": "Aktiv", "paused": "Pausiert", "trigger": "Jetzt ausführen", "payNow": "Jetzt zahlen",
+    "payNowNeedsAccount": "Weise diesem Abonnement vor dem Zahlen ein Konto zu",
+    "deleteTitle": "Abonnement löschen", "deleteConfirm": "Dieses Abonnement löschen?"
+  },
+  "stats": {
+    "title": "Statistiken", "netCashFlow": "Netto-Cashflow", "income": "Einnahmen", "expense": "Ausgaben",
+    "forecast": "Monatsprognose", "mtdSpending": "Diesen Monat ausgegeben", "projected": "Prognostiziert", "budget": "Budget",
+    "overBudget": "Über Budget", "underBudget": "Unter Budget",
+    "comparative": "Monatsvergleich", "currentPeriod": "Aktueller Zeitraum", "previousPeriod": "Vorheriger Zeitraum",
+    "vsPrevious": "vs. vorher", "topChanges": "Größte Änderungen"
+  },
+  "profile": {
+    "title": "Profil", "settings": "Einstellungen", "theme": "Design", "language": "Sprache",
+    "logout": "Abmelden", "logoutConfirm": "Möchtest du dich wirklich abmelden?",
+    "account": "Konto", "editName": "Name bearbeiten", "changePassword": "Passwort ändern",
+    "currentPassword": "Aktuelles Passwort", "newPassword": "Neues Passwort", "confirmPassword": "Passwort bestätigen",
+    "name": "Name", "passwordRequired": "Fülle alle Felder aus", "passwordMismatch": "Passwörter stimmen nicht überein",
+    "passwordChanged": "Passwort aktualisiert", "nameRequired": "Gib einen Namen ein"
+  },
   "auth": {
     "login": "Anmelden", "welcome": "Willkommen bei Platica", "tagline": "Dein persönlicher Finanz-Tracker",
     "identifier": "Benutzername oder E-Mail", "identifierPlaceholder": "benutzer@beispiel.de", "password": "Passwort",

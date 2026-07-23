@@ -4,7 +4,7 @@
     "close": "Close", "search": "Search", "clear": "Clear", "help": "Help", "logout": "Log out",
     "darkMode": "Dark mode", "lightMode": "Light mode", "language": "Language", "retry": "Retry",
     "noData": "No data to display", "notFound": "Section not found",
-    "add": "Add", "confirm": "Confirm"
+    "add": "Add", "confirm": "Confirm", "error": "Something went wrong", "date": "Date"
   },
   "form": {
     "required": "This field is required", "invalidNumber": "Enter a valid number",
@@ -18,11 +18,81 @@
   "dashboard": {
     "title": "Overview", "greeting": "Hi, {{name}}", "subtitle": "Your finances connected to Platica",
     "accountsTotal": "Accounts total", "incomeTotal": "Income", "expenseTotal": "Expenses",
-    "netTotal": "Net balance", "recent": "Recent transactions"
+    "netTotal": "Net balance", "recent": "Recent transactions",
+    "budgetVsActual": "Budget vs. actual", "remaining": "Remaining"
   },
-  "transactions": { "title": "Transactions", "empty": "No transactions yet", "untitled": "No description", "income": "Income", "expense": "Expense", "transfer": "Transfer" },
+  "transactions": {
+    "title": "Transactions", "empty": "No transactions yet", "untitled": "No description",
+    "income": "Income", "expense": "Expense", "transfer": "Transfer", "confirm": "Confirm",
+    "addTitle": "New transaction", "editTitle": "Edit transaction",
+    "account": "Account", "selectAccount": "Select an account",
+    "category": "Category", "selectCategory": "Select a category",
+    "amount": "Amount", "date": "Date", "description": "Description", "descriptionHint": "Optional",
+    "errAccount": "Select an account", "errCategory": "Select a category",
+    "errAmount": "Enter a valid amount", "errDate": "Enter a valid date (YYYY-MM-DD)",
+    "deleteTitle": "Delete transaction", "deleteMessage": "Delete this transaction?",
+    "transferTitle": "New transfer", "transferAction": "Transfer",
+    "from": "From", "to": "To", "destinationAmount": "Destination amount", "concept": "Concept",
+    "errAccounts": "Select both accounts", "errSameAccount": "Accounts must be different",
+    "errDestinationAmount": "Enter the destination amount"
+  },
   "accounts": { "title": "Accounts", "empty": "No accounts registered", "balance": "Balance", "addAccount": "Add account" },
-  "profile": { "title": "Profile", "settings": "Settings", "theme": "Theme", "language": "Language", "logout": "Log out", "logoutConfirm": "Are you sure you want to log out?" },
+  "rates": { "title": "Exchange rates", "current": "Current rate", "history": "History" },
+  "budgets": {
+    "title": "Budgets", "empty": "No budgets yet", "untitled": "No category",
+    "remaining": "Remaining", "period": "Period", "rateSource": "Rate",
+    "periodMonthly": "Monthly", "periodYearly": "Yearly", "periodOneTime": "One-time",
+    "rateBcv": "BCV", "rateBinance": "Binance", "rateUsd": "USD", "rateEur": "EUR",
+    "editTitle": "Edit budget", "newTitle": "New budget",
+    "deleteTitle": "Delete budget", "deleteMessage": "Delete this budget?"
+  },
+  "debts": {
+    "title": "Debts", "empty": "No debts registered", "payable": "Payable", "receivable": "Receivable",
+    "pay": "Pay", "contactName": "Contact", "totalAmount": "Total amount", "dueDate": "Due",
+    "editTitle": "Edit debt", "newTitle": "New debt",
+    "deleteTitle": "Delete debt", "deleteMessage": "Delete this debt?",
+    "status": { "pending": "Pending", "partial": "Partial", "paid": "Paid" }
+  },
+  "categories": {
+    "title": "Categories", "empty": "No categories yet", "newTitle": "New category", "editTitle": "Edit category",
+    "name": "Name", "namePlaceholder": "e.g. Food", "nameRequired": "Enter a name",
+    "income": "Income", "expense": "Expense", "icon": "Icon", "iconPlaceholder": "e.g. cart", "color": "Color",
+    "deleteTitle": "Delete category", "deleteConfirm": "Delete this category?"
+  },
+  "categoryGroups": {
+    "title": "Category groups", "empty": "No groups yet", "newTitle": "New group", "editTitle": "Edit group",
+    "name": "Name", "namePlaceholder": "e.g. Work", "nameRequired": "Enter a name",
+    "type": "Type", "typeIncome": "Income", "typeExpense": "Expense", "typeNeutral": "Neutral",
+    "include": "Include", "exclude": "Exclude",
+    "deleteTitle": "Delete group", "deleteConfirm": "Delete this group?"
+  },
+  "recurring": {
+    "title": "Subscriptions", "empty": "No subscriptions yet", "newTitle": "New subscription", "editTitle": "Edit subscription",
+    "untitled": "No description", "description": "Description", "descriptionPlaceholder": "e.g. Spotify", "descriptionRequired": "Enter a description",
+    "amount": "Amount", "amountInvalid": "Enter a valid amount", "currency": "Currency", "account": "Account", "noAccount": "No account",
+    "category": "Category", "categoryRequired": "Select a category",
+    "frequency": "Frequency", "frequency_daily": "Daily", "frequency_weekly": "Weekly", "frequency_monthly": "Monthly", "frequency_yearly": "Yearly",
+    "nextDate": "Next date", "dateInvalid": "Enter a valid date (YYYY-MM-DD)",
+    "executionMode": "Mode", "modeAuto": "Automatic", "modeManual": "Manual",
+    "active": "Active", "paused": "Paused", "trigger": "Run now", "payNow": "Pay now",
+    "payNowNeedsAccount": "Assign an account to this subscription before paying",
+    "deleteTitle": "Delete subscription", "deleteConfirm": "Delete this subscription?"
+  },
+  "stats": {
+    "title": "Statistics", "netCashFlow": "Net cash flow", "income": "Income", "expense": "Expenses",
+    "forecast": "Monthly forecast", "mtdSpending": "Spent this month", "projected": "Projected", "budget": "Budget",
+    "overBudget": "Over budget", "underBudget": "Under budget",
+    "comparative": "Month-over-month", "currentPeriod": "Current period", "previousPeriod": "Previous period",
+    "vsPrevious": "vs. previous", "topChanges": "Top changes"
+  },
+  "profile": {
+    "title": "Profile", "settings": "Settings", "theme": "Theme", "language": "Language",
+    "logout": "Log out", "logoutConfirm": "Are you sure you want to log out?",
+    "account": "Account", "editName": "Edit name", "changePassword": "Change password",
+    "currentPassword": "Current password", "newPassword": "New password", "confirmPassword": "Confirm password",
+    "name": "Name", "passwordRequired": "Fill in all fields", "passwordMismatch": "Passwords do not match",
+    "passwordChanged": "Password updated", "nameRequired": "Enter a name"
+  },
   "auth": {
     "login": "Log in", "welcome": "Welcome to Platica", "tagline": "Your personal finance wallet",
     "identifier": "Username or email", "identifierPlaceholder": "user@example.com", "password": "Password",
