@@ -13,6 +13,9 @@ android/
 .env
 .env.local
 
+# Local IDE / tooling config (may contain secrets — e.g. MCP tokens)
+.kiro/
+
 # OS
 .DS_Store
 Thumbs.db
