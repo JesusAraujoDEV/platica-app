@@ -3,7 +3,16 @@
     "save": "Speichern", "cancel": "Abbrechen", "delete": "Löschen", "edit": "Bearbeiten", "loading": "Wird geladen...",
     "close": "Schließen", "search": "Suchen", "clear": "Zurücksetzen", "help": "Hilfe", "logout": "Abmelden",
     "darkMode": "Dunkler Modus", "lightMode": "Heller Modus", "language": "Sprache", "retry": "Erneut versuchen",
-    "noData": "Keine Daten verfügbar", "notFound": "Bereich nicht gefunden"
+    "noData": "Keine Daten verfügbar", "notFound": "Bereich nicht gefunden",
+    "add": "Hinzufügen", "confirm": "Bestätigen"
+  },
+  "form": {
+    "required": "Dieses Feld ist erforderlich", "invalidNumber": "Gib eine gültige Zahl ein",
+    "selectOption": "Option auswählen", "amount": "Betrag", "description": "Beschreibung",
+    "date": "Datum", "category": "Kategorie", "account": "Konto", "type": "Typ", "currency": "Währung"
+  },
+  "currency": {
+    "display": "Anzeigewährung", "USD": "Dollar", "EUR": "Euro", "USDT": "USDT"
   },
   "nav": { "dashboard": "Start", "transactions": "Transaktionen", "budgets": "Budgets", "accounts": "Konten", "profile": "Profil", "more": "Mehr" },
   "dashboard": {

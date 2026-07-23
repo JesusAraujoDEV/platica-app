@@ -4,6 +4,8 @@ import { Stack, router, usePathname, useRootNavigationState, useSegments } from 
 import { StatusBar } from "expo-status-bar";
 import { AuthProvider, useAuth } from "@/auth/AuthContext";
 import { ThemeProvider, useTheme } from "@/theme/ThemeContext";
+import { CurrencyProvider } from "@/lib/CurrencyContext";
+import { RateProvider } from "@/services/rates";
 import "@/i18n";
 
 function RootNavigator() {
@@ -74,7 +76,11 @@ export default function RootLayout() {
   return (
     <ThemeProvider>
       <AuthProvider>
-        <RootNavigator />
+        <CurrencyProvider>
+          <RateProvider>
+            <RootNavigator />
+          </RateProvider>
+        </CurrencyProvider>
       </AuthProvider>
     </ThemeProvider>
   );

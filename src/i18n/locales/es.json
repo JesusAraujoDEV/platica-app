@@ -4,7 +4,16 @@
     "loading": "Cargando...", "close": "Cerrar", "search": "Buscar", "clear": "Limpiar",
     "help": "Ayuda", "logout": "Cerrar sesión", "darkMode": "Modo oscuro",
     "lightMode": "Modo claro", "language": "Idioma", "retry": "Reintentar",
-    "noData": "No hay datos para mostrar", "notFound": "Sección no encontrada"
+    "noData": "No hay datos para mostrar", "notFound": "Sección no encontrada",
+    "add": "Agregar", "confirm": "Confirmar"
+  },
+  "form": {
+    "required": "Este campo es obligatorio", "invalidNumber": "Ingresa un número válido",
+    "selectOption": "Selecciona una opción", "amount": "Monto", "description": "Descripción",
+    "date": "Fecha", "category": "Categoría", "account": "Cuenta", "type": "Tipo", "currency": "Moneda"
+  },
+  "currency": {
+    "display": "Moneda de visualización", "USD": "Dólar", "EUR": "Euro", "USDT": "USDT"
   },
   "nav": { "dashboard": "Inicio", "transactions": "Movimientos", "budgets": "Presupuestos", "accounts": "Cuentas", "profile": "Perfil", "more": "Más" },
   "dashboard": {

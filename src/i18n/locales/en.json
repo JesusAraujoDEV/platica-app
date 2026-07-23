@@ -3,7 +3,16 @@
     "save": "Save", "cancel": "Cancel", "delete": "Delete", "edit": "Edit", "loading": "Loading...",
     "close": "Close", "search": "Search", "clear": "Clear", "help": "Help", "logout": "Log out",
     "darkMode": "Dark mode", "lightMode": "Light mode", "language": "Language", "retry": "Retry",
-    "noData": "No data to display", "notFound": "Section not found"
+    "noData": "No data to display", "notFound": "Section not found",
+    "add": "Add", "confirm": "Confirm"
+  },
+  "form": {
+    "required": "This field is required", "invalidNumber": "Enter a valid number",
+    "selectOption": "Select an option", "amount": "Amount", "description": "Description",
+    "date": "Date", "category": "Category", "account": "Account", "type": "Type", "currency": "Currency"
+  },
+  "currency": {
+    "display": "Display currency", "USD": "Dollar", "EUR": "Euro", "USDT": "USDT"
   },
   "nav": { "dashboard": "Home", "transactions": "Transactions", "budgets": "Budgets", "accounts": "Accounts", "profile": "Profile", "more": "More" },
   "dashboard": {
